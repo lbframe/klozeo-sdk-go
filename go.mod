@@ -1,3 +1,3 @@
-module github.com/klozeo/sdk-go
+module github.com/lbframe/sdk-go
 
 go 1.23
