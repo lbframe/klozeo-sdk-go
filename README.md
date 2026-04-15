@@ -5,7 +5,7 @@ Official Go client for the [Klozeo](https://klozeo.com) API.
 ## Installation
 
 ```bash
-go get github.com/lbframe/sdk-go
+go get github.com/lbframe/klozeo-sdk-go
 ```
 
 Requires Go 1.23+.
@@ -13,7 +13,7 @@ Requires Go 1.23+.
 ## Quick Start
 
 ```go
-import "github.com/lbframe/sdk-go"
+import "github.com/lbframe/klozeo-sdk-go"
 
 client := klozeo.New("sk_live_your_api_key")
 ctx := context.Background()
@@ -46,5 +46,5 @@ io.Copy(os.Stdout, reader)
 ## Documentation
 
 - Full API reference: <https://docs.klozeo.com>
-- GoDoc: <https://pkg.go.dev/github.com/lbframe/sdk-go>
-- GitHub: <https://github.com/lbframe/sdk-go>
+- GoDoc: <https://pkg.go.dev/github.com/lbframe/klozeo-sdk-go>
+- GitHub: <https://github.com/lbframe/klozeo-sdk-go>

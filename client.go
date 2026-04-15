@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	defaultBaseURL    = "https://app.klozeo.com/api/v1"
+	defaultBaseURL    = "https://api.klozeo.com/api/v1"
 	defaultTimeout    = 30 * time.Second
 	defaultMaxRetries = 3
 )
