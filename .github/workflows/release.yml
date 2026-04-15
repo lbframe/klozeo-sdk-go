@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.23"
+
+      - name: Verify module
+        run: go build ./...
+
+      - name: Notify pkg.go.dev
+        run: |
+          VERSION=${GITHUB_REF_NAME}
+          curl -s "https://sum.golang.org/lookup/github.com/lbframe/klozeo-sdk-go@${VERSION}" || true
+          curl -s "https://proxy.golang.org/github.com/lbframe/klozeo-sdk-go/@v/${VERSION}.info" || true
