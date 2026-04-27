@@ -56,6 +56,8 @@ type Lead struct {
 	SourceID string `json:"source_id,omitempty"`
 	// LogoURL is the URL of the lead's logo image.
 	LogoURL string `json:"logo_url,omitempty"`
+	// Status is the pipeline status of the lead.
+	Status string `json:"status,omitempty"`
 
 	// Attributes is the list of dynamic custom attributes.
 	Attributes []Attribute `json:"attributes,omitempty"`
@@ -102,6 +104,8 @@ type UpdateLeadInput struct {
 	SourceID *string `json:"source_id,omitempty"`
 	// LogoURL updates the logo image URL.
 	LogoURL *string `json:"logo_url,omitempty"`
+	// Status updates the pipeline status.
+	Status *string `json:"status,omitempty"`
 }
 
 // Attribute represents a dynamic custom attribute on a lead.
