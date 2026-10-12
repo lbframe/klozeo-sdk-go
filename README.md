@@ -48,3 +48,7 @@ io.Copy(os.Stdout, reader)
 - Full API reference: <https://docs.klozeo.com>
 - GoDoc: <https://pkg.go.dev/github.com/lbframe/klozeo-sdk-go>
 - GitHub: <https://github.com/lbframe/klozeo-sdk-go>
+
+## License
+
+MIT. See [LICENSE](LICENSE).
